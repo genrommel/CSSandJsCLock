@@ -1,0 +1,80 @@
+html{
+    background: url("https://wallpaperset.com/w/full/d/e/8/107867.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+
+    
+}
+
+body{
+    font-size: 2rem;
+    display: flex;
+    flex: 1;
+    min-height: 100vh;
+    align-items: center;
+
+}
+
+.clock{
+    width: 30rem;
+    height: 30rem;
+    border: 20px solid white;
+    border-radius: 50%;
+    margin: 50px auto;
+    padding: 2rem;
+ 
+}
+
+
+.clock-face{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform: translateY(-3px);
+}
+.hand{
+    background: rgb(0,0,0);
+    width: 50%;
+    height: 6px;
+    transform-origin: 100%;
+    transform: rotate(90deg);
+    position: absolute;
+    top: 50%;
+    transition: all 0.05s;
+    transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+}
+
+.hour-hand{
+    background: rgb(255,0,0);
+    border: 2px solid white;
+    
+}
+
+.minute-hand{
+    background: rgb(0,255,0);
+    box-shadow: 3px 3px 20px blue;
+}
+
+.second-hand{
+    background: rgb(0,0,255);
+}
+
+
+/* .Number{
+    background: white;
+    color: #000;
+    font-size: 30px;
+    padding: 10px 15px;
+    border: 3px solid #000;
+}
+
+.kNumber{
+    color: purple;
+    display: block;
+    font-size: 8rem;
+    text-shadow: 5px 0 15px black;
+
+} */
